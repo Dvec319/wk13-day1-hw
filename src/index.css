@@ -11,9 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  height: 100%;
   background-image: url("https://i.imgur.com/1qJbmcO.jpg");
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
@@ -21,10 +23,12 @@ code {
     monospace;
 }
 
+
+
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: black;
+  background-color: brown;
   padding: 30px;
 }
 
@@ -84,4 +88,17 @@ code {
   color: blueviolet;
   transform: scale(1.5);
   transition: all 1s ease;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 300px;
+  }
+  
 }
